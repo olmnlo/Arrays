@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -38,8 +39,39 @@ public class Main {
 //        }
 //        System.out.println("the max number is: "+max);
 
+        ArrayList<Integer> numbers = new ArrayList<>();
 
+        numbers.add(3);
+        numbers.add(5);
+        numbers.add(7);
+        System.out.println(numbers);
+        numbers.remove(Integer.valueOf(3));
+        System.out.println(numbers);
 
+        ArrayList<String> color = new ArrayList<>();
+        color.add("red");
+        color.add("black");
+        color.add("green");
+        color.add("blue");
+
+        System.out.println(color);
+        color.set(1, "White");
+        color.remove("green");
+        System.out.println(color);
+
+//        cars.add("BMW");
+//        cars.add("Audi");
+//        cars.add("Ford");
+//        System.out.println("Add: "+cars);
+//        cars.add(1,"GMC");
+//        System.out.println("Add index 1: "+ cars);
+//        cars.set(1,"Geely");
+//        System.out.println("Set index 1 to Geely: "+cars);
+//        cars.remove(1);
+//        System.out.println("Remove index 1: "+cars);
+//        cars.remove("Ford");
+//        System.out.println("Remove by object name: "+cars);
+//        System.out.println("Get index 1: "+cars.get(1));
 
 
 //        for(String s : strings){
