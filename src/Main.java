@@ -39,25 +39,36 @@ public class Main {
 //        }
 //        System.out.println("the max number is: "+max);
 
+//        ArrayList<Integer> numbers = new ArrayList<>();
+//
+//        numbers.add(3);
+//        numbers.add(5);
+//        numbers.add(7);
+//        System.out.println(numbers);
+//        numbers.remove(Integer.valueOf(3));
+//        System.out.println(numbers);
+
         ArrayList<Integer> numbers = new ArrayList<>();
-
-        numbers.add(3);
-        numbers.add(5);
+        numbers.add(12);
+        numbers.add(25);
         numbers.add(7);
+        numbers.add(8);
+        numbers.add(10);
+        numbers.add(5);
+        numbers.add(55);
+        ArrayList<Integer> even = new ArrayList<>();
+        ArrayList<Integer> odd = new ArrayList<>();
+        for( Integer n : numbers){
+            if(n % 2 == 0){
+                even.add(n);
+            }else{
+                odd.add(n);
+            }
+        }
         System.out.println(numbers);
-        numbers.remove(Integer.valueOf(3));
-        System.out.println(numbers);
+        System.out.println(even);
+        System.out.println(odd);
 
-        ArrayList<String> color = new ArrayList<>();
-        color.add("red");
-        color.add("black");
-        color.add("green");
-        color.add("blue");
-
-        System.out.println(color);
-        color.set(1, "White");
-        color.remove("green");
-        System.out.println(color);
 
 //        cars.add("BMW");
 //        cars.add("Audi");
